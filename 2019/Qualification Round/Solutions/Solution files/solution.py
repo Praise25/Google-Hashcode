@@ -1,6 +1,7 @@
-from dependencies import Photo, Slides, parser, vertical_photo_objs, horizontal_photo_objs, is_horizontal
+from dependencies import Slides, parser, vertical_photo_objs, horizontal_photo_objs
+import tkinter.filedialog
 
-file_name = r"F:\Personal\My Python Projects\Google Hashcode\2019\Qualification Round\Problem Statement\e_shiny_selfies.txt"
+file_name = tkinter.filedialog.askopenfilename()
 parser(file_name)
 slide_array = []
 temp_list = []
